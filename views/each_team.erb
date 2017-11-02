@@ -1,0 +1,6 @@
+<!-- we needed to use the colon because we are navigating
+a hash within a hash with symbols -->
+<h1> <%="#{@the_team}"%></h1>
+<% @roster[:"#{@the_team}"].each do |k,v| %>
+<p> <%= "#{k}: #{v}" %> <br> </p>
+  <% end %>

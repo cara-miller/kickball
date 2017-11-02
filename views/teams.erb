@@ -1,0 +1,10 @@
+<!-- As a Kickball Fan
+I want to view a page with the names of each team
+So that I can learn which teams are in the league -->
+
+<!-- erb files are HTML
+need to use erb template tags to run ruby -->
+
+<% @roster.each do |k,v| %>
+<a href="/teams/<%= k %>"><%= k %></a>
+<% end %>
